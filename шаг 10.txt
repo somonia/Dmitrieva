@@ -1,0 +1,8 @@
+$ history
+    1  git clone https://github.com/somonia/Dmitrieva.git
+    2  git history
+    3  git --help
+    4  git hostory --help
+    5  git history --help
+    6  hitory
+    7  history

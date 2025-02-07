@@ -1,0 +1,33 @@
+select * from security_journal where vulnerability_id = 'УБИ.041' and discovery_date = '2024-10-10' (460 vlan)
+
+произошло на 460 влане  - 1? 4 8 15 19 24 37 39 46 54 
+
+select * from applications where session_time = '12:30' and application = 'Mozila Firefox'
+
+пк 3, 4, 7, 8, 18, 27, 32, 39, 42, 43,51, 57, 58
+
+select e.uid from employees e join applications a  on e.pc = a.source_pc where a.session_time = '12:30' and a.application = 'Mozila Firefox'
+
+ мозила в 12:30 - 3, 4, 7, 18, 32, 39, 42, 43,51, 57
+
+select * from pc where vlan_pc = 460
+
+остается - 4? 39? - кто-то из них - 3623 и 36335
+
+select * from employees join statuses on employees.status = statuses.id where employees.pc = 4 or employees.pc=39
+
+3623 - в отпуске
+36335 - на больничном - нет сил подходить к рабочему ноутбуку, но сессия мозилы есть, поэтому он злоумышленник
+
+select * from pc where id= 39
+
+|id |ip_address|mac_address      |type_of_pc|operation_system|vlan_pc|
+|---|----------|-----------------|----------|----------------|-------|
+|39 |10.10.3.35|F7:15:79:23:98:08|PC        |Ubuntu 20.04    |460    |
+
+
+
+
+
+
+
